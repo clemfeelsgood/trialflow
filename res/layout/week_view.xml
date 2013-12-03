@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/weekLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".MainActivity" >
+		          
+	
+    <TextView
+    	android:padding="10dp"
+        android:id="@+id/weekMon"
+        android:layout_width="0dp"
+        android:layout_height="50sp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="1px"
+        android:layout_marginLeft="1px"
+        android:layout_weight="1"
+        android:background="@color/$lightGrey"
+        android:gravity="center_horizontal|center_vertical"
+        android:textSize="15sp"
+        android:onClick="clickOnCalendar"/>
+    
+
+    <TextView
+        android:id="@+id/weekTue"
+    	android:padding="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="1px"
+        android:layout_marginLeft="1px"
+        android:background="@color/$lightGrey"
+        android:textSize="15sp"
+        android:onClick="clickOnCalendar" />
+     
+    <TextView
+        android:id="@+id/weekWed"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+    	android:padding="10dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="1px"
+        android:layout_marginLeft="1px"
+        android:background="@color/$lightGrey"
+        android:textSize="15sp"
+        android:onClick="clickOnCalendar"/>
+      
+    <TextView
+        android:id="@+id/weekThu"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+    	android:padding="10dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="1px"
+        android:layout_marginLeft="1px"
+        android:background="@color/$lightGrey"
+        android:textSize="15sp"
+        android:onClick="clickOnCalendar" />
+       
+    <TextView
+        android:id="@+id/weekFri"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+    	android:padding="10dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="1px"
+        android:layout_marginLeft="1px"
+        android:background="@color/$lightGrey"
+        android:textSize="15sp"
+        android:onClick="clickOnCalendar" />
+        
+    <TextView
+        android:id="@+id/weekSat"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+    	android:padding="10dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="1px"
+        android:layout_marginLeft="1px"
+        android:background="@color/$lightGrey"
+        android:textSize="15sp"        
+        android:onClick="clickOnCalendar"/>
+         
+    <TextView
+        android:id="@+id/weekSun"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+    	android:padding="10dp"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_marginTop="1px"
+        android:layout_marginLeft="1px"
+        android:background="@color/$lightGrey"
+        android:textSize="15sp"
+        android:onClick="clickOnCalendar" />
+
+</LinearLayout>
+    

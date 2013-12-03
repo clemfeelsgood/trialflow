@@ -1,0 +1,19 @@
+<%= @assessment.name %>
+
+<% link_to_raw('add measure'), create_crf_item_path(@assessment) %>
+
+	 <% if @assessment.crf_items.any? %>
+	 	 <% @assessment.crf_items.each do |item| %>
+
+	 	 <h4> <%= item.name %>
+	 	 </h4>
+	 	 <p>
+	 	 	<%= item.description %>
+	 	 	<%= item.input_type %> 
+	 	 	<%= item.user_id %> 
+	 	 </p>
+	 	 <% link_to_raw('show assessment'), show_assessment_path(assessment) %>
+
+	 	 <% end %>
+	<% end %>
+<% end %>

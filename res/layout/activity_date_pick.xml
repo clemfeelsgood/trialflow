@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DatePickActivity" >
+    
+     <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="200dp"
+    android:orientation="vertical" >	
+    	<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="30dp"
+		    android:background="@color/$menuBack" >
+
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_height="match_parent"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal|center_vertical"
+		        android:text="@string/short_day_mon"
+		        android:textSize="13sp"
+		        android:textColor="@android:color/white"/>
+
+		    <TextView 
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal|center_vertical"
+		    	android:layout_height="match_parent"
+		    	android:text="@string/short_day_tue"
+		    	android:textSize="13sp"
+		    	android:textColor="@android:color/white" />
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal|center_vertical"
+		    	android:layout_height="match_parent"
+		    	android:text="@string/short_day_wed"
+		    	android:textSize="13sp"
+		    	android:textColor="@android:color/white" />
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal|center_vertical"
+		    	android:layout_height="match_parent"
+		    	android:text="@string/short_day_thu"
+		    	android:textSize="13sp"
+		    	android:textColor="@android:color/white" />
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal|center_vertical"
+		    	android:layout_height="match_parent"
+		    	android:text="@string/short_day_fri"
+		    	android:textSize="13sp"
+		    	android:textColor="@android:color/white" />
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal|center_vertical"
+		    	android:layout_height="match_parent"
+		    	android:text="@string/short_day_sat"
+		    	android:textSize="13sp"
+		    	android:textColor="@android:color/white" />
+		    
+		    <TextView
+		        android:layout_width="0dp"
+		        android:layout_weight="1"
+		        android:gravity="center_horizontal|center_vertical"
+		    	android:layout_height="match_parent"
+		    	android:text="@string/short_day_sun"
+		    	android:textSize="13sp"
+		    	android:textColor="@android:color/white"/>
+		    
+		</LinearLayout>
+		<ScrollView
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:fadingEdge="none"
+		    android:scrollbars="none"
+		    android:overScrollMode="never" >
+		    <LinearLayout
+		        android:id="@+id/weeksFrame"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginBottom="300dp"
+			    android:orientation="vertical" >
+			</LinearLayout>    
+		</ScrollView>
+    	
+    </LinearLayout>
+
+    
+</RelativeLayout>

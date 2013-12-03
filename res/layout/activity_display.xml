@@ -1,0 +1,84 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	    	xmlns:tools="http://schemas.android.com/tools"	    	
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content">
+
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    tools:context=".DisplayActivity" >
+	    
+	    <TextView
+	        android:id="@+id/displayName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="15dp"
+	        android:text="@string/designation"
+	        android:textSize="25sp" />
+	    
+	    <ImageView
+	        android:id="@+id/calendar"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginTop="30dp"
+	        android:layout_toRightOf="@id/displayName"
+	        android:onClick="clickHandle"
+	        android:src="@drawable/poll_date_transparent_red"
+	        android:text="@string/designation" />
+	    
+	    <TextView
+	        android:id="@+id/displayDay"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/displayName"
+	        android:layout_centerHorizontal="true"
+	        android:layout_marginTop="10dp"
+	        android:padding="5dp"
+	        android:text="@string/designation"
+	        android:textSize="15sp" />
+	    
+	    <View
+	        android:id="@+id/dotted"
+	        android:layout_width="wrap_content"
+	        android:layout_height="1dp"
+	        android:layout_below="@id/displayDay"
+	        android:layout_marginLeft="5dp"
+	        android:layout_marginRight="5dp"
+	        android:layout_marginTop="15dp"
+	        android:background="@drawable/dotted" />
+	    
+	    <TextView
+	        android:id="@+id/displayActions"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/dotted"
+	        android:layout_centerHorizontal="true"
+	        android:background="@color/$blue"
+	        android:gravity="center_horizontal|center_vertical"
+	        android:padding="15dp"
+	        android:text="@string/pending_actions"
+	        android:textSize="15sp" />
+	    
+	    <View android:id="@+id/dotted2" 
+	        	android:layout_width="wrap_content" 
+	        	android:layout_height="1dp" 
+	        	android:layout_marginLeft="5dp" 
+	        	android:layout_below="@id/displayActions"
+	        	android:layout_marginRight="5dp" 
+	        	android:background="@drawable/dotted"/>
+	    
+	    <LinearLayout
+	        android:id="@+id/displayActionsFrame"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/dotted2"
+	        android:orientation="vertical" >
+	        
+	    </LinearLayout>
+	
+	
+	</RelativeLayout>
+</ScrollView>

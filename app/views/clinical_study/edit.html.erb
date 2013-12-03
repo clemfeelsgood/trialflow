@@ -1,0 +1,21 @@
+
+
+	<%= @clinical_study.name %>
+
+<% link_to_raw('add assessment'), create_assessment_path(@clinical_study) %>
+
+	 <% if @clinical_study.assessments.any? %>
+	 	 <% @clinical_study.assessments.each do |assessment| %>
+	 	 <div class="boxstraight">
+		 	 <h4>
+		 	  <%= assessment.name %>
+		 	 </h4>
+		 	 <p>
+		 	 	<%= assessment.description %>
+		 	 	<%= assessment.protocol_day %> 
+		 	 </p>
+		 	 <% link_to_raw('show assessment'), show_assessment_path(assessment) %>
+		 </div>
+	 	 <% end %>
+	<% end %>
+<% end %>
